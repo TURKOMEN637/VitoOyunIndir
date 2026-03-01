@@ -1,0 +1,360 @@
+import poppyPlaytime3Cover from "@/assets/poppy-playtime-3-cover.jpg";
+import poppyPlaytime4Cover from "@/assets/poppy-playtime-4-cover.jpg";
+import poppyPlaytime5Cover from "@/assets/poppy-playtime-5-cover.jpg";
+import csgo2013Cover from "@/assets/csgo-2013-cover.jpg";
+import mirrorsEdgeCover from "@/assets/mirrors-edge-cover.jpg";
+import mirrorsEdgeCatalystCover from "@/assets/mirrors-edge-catalyst-cover.jpg";
+
+export interface Game {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  downloadUrl: string;
+  crackFixUrl?: string;
+  crackFixButtonText?: string;
+  placeholderButtonText?: string;
+  password?: string;
+}
+
+export const games: Game[] = [
+  // ---- Existing games (oldest first, displayed reversed) ----
+  {
+    id: "gta-3",
+    title: "GTA 3 Full Pc İndir",
+    description: "Rockstar Games'in efsanevi açık dünya oyunu GTA 3'ü bilgisayarınıza indirin. Liberty City sokaklarında maceraya atılın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "gta-3-duzenlenmis",
+    title: "GTA 3 Düzenlenmiş Versiyon Full Pc İndir",
+    description: "GTA 3'ün düzenlenmiş ve iyileştirilmiş versiyonunu indirin. Geliştirilmiş grafikler ve düzeltmeler içerir.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "gta-san-andreas",
+    title: "GTA San Andreas Full Pc İndir",
+    description: "CJ'in hikayesini yaşayın. San Andreas eyaletinin üç büyük şehrinde geçen efsanevi açık dünya macerasını indirin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "gta-vice-city",
+    title: "GTA Vice City Full Pc İndir",
+    description: "80'lerin neon ışıklı Vice City'sine geri dönün. Tommy Vercetti'nin hikayesini yaşayın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "gta-trilogy",
+    title: "GTA Trilogy Full Pc İndir",
+    description: "GTA III, Vice City ve San Andreas üçlemesini tek pakette indirin.",
+    image: "",
+    downloadUrl: "https://www.up-4ever.net/rndxksnh8m5b",
+  },
+  {
+    id: "gta-4-complete",
+    title: "GTA 4 Complete Edition Full Pc İndir",
+    description: "Niko Bellic'in Liberty City'deki hikayesini The Lost and Damned ve The Ballad of Gay Tony DLC'leri ile birlikte yaşayın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "gta-4-episodes",
+    title: "GTA 4: Episodes from Liberty City Full Pc İndir",
+    description: "GTA 4'ün iki bağımsız genişleme paketi: The Lost and Damned ve The Ballad of Gay Tony.",
+    image: "",
+    downloadUrl: "https://0.torrentoyunindir.com/torrents1/Grand.Theft.Auto.Episodes.from.Liberty.City-RELOADED.torrent",
+  },
+  {
+    id: "gta-5",
+    title: "GTA 5 Full Pc İndir",
+    description: "Rockstar Games'in başyapıtı GTA 5'i indirin. Los Santos'ta üç farklı karakterin hikayesini yaşayın.",
+    image: "",
+    downloadUrl: "https://www.dosyadrive.vip/oUiNt",
+  },
+  {
+    id: "gta-5-sikistirilmis",
+    title: "GTA 5 Sıkıştırılmış Full Pc İndir",
+    description: "GTA 5'in sıkıştırılmış versiyonunu indirin. Daha az boyut, aynı deneyim. Kurulum şifresi: vitooyunindir",
+    image: "",
+    downloadUrl: "#",
+    password: "vitooyunindir",
+  },
+  {
+    id: "gta-5-ultra-sikistirilmis",
+    title: "GTA 5 Ultra Sıkıştırılmış Full Pc İndir",
+    description: "GTA 5'in ultra sıkıştırılmış versiyonunu indirin. En düşük boyut. Kurulum şifresi: vitooyunindir",
+    image: "",
+    downloadUrl: "#",
+    password: "vitooyunindir",
+  },
+  {
+    id: "gta-6",
+    title: "GTA 6 Full Pc İndir",
+    description: "Rockstar Games'in merakla beklenen yeni oyunu GTA 6. Vice City'ye geri dönüş!",
+    image: "",
+    downloadUrl: "#",
+    placeholderButtonText: "Cracklenince Eklenir",
+  },
+  {
+    id: "mafia-2",
+    title: "Mafia 2 Full Pc İndir",
+    description: "Vito Scaletta'nın Empire Bay'deki mafya hikayesini yaşayın. Sinematik anlatım ve aksiyonla dolu bir macera.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "mafia-2-definitive",
+    title: "Mafia 2 Definitive Edition Full Pc İndir",
+    description: "Mafia 2'nin yenilenmiş grafiklere sahip definitive edition versiyonunu indirin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "re-3",
+    title: "Resident Evil 3 Full Pc İndir",
+    description: "Jill Valentine'in Raccoon City'den kaçış hikayesini yaşayın. Nemesis ile yüzleşmeye hazır olun.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "re-4-remake",
+    title: "Resident Evil 4 Remake Full Pc İndir",
+    description: "Capcom'un efsanevi Resident Evil 4'ünün modern remake versiyonunu indirin. Leon S. Kennedy olarak oynayın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "re-7",
+    title: "Resident Evil 7 Full Pc İndir",
+    description: "Ethan Winters'ın Baker ailesinin çiftliğindeki korku dolu macerasını yaşayın. Birinci şahıs perspektifinde korku.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "re-village",
+    title: "Resident Evil Village Full Pc İndir",
+    description: "Ethan Winters'ın Avrupa'daki gizemli bir köyde geçen korku dolu yeni macerasını yaşayın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "manhunt-1",
+    title: "Manhunt 1 Full Pc İndir",
+    description: "Rockstar'ın tartışmalı aksiyon-gizlilik oyunu Manhunt'ı indirin. James Earl Cash olarak hayatta kalın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "manhunt-2",
+    title: "Manhunt 2 Full Pc İndir",
+    description: "Manhunt serisinin ikinci oyununu indirin. Daniel Lamb'ın hikayesini keşfedin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "half-life-1",
+    title: "Half-Life 1 Full Pc İndir",
+    description: "Valve'ın FPS tarihini değiştiren efsanevi oyunu Half-Life'ı indirin. Gordon Freeman olarak Black Mesa'da hayatta kalın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "half-life-1-opposing-force",
+    title: "Half-Life 1 Opposing Force Full Pc İndir",
+    description: "Half-Life'ın genişleme paketi Opposing Force'u indirin. Adrian Shephard olarak oynayın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "half-life-2",
+    title: "Half-Life 2 Full Pc İndir",
+    description: "Valve'ın başyapıtı Half-Life 2'yi indirin. Gordon Freeman City 17'de Combine'a karşı savaşıyor.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "inzoi",
+    title: "inZOI Full Pc İndir",
+    description: "Krafton'un yaşam simülasyonu oyunu inZOI'yi indirin. Kendi hayatınızı simüle edin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "fifa-22",
+    title: "FIFA 22 Full Pc İndir",
+    description: "EA Sports'un popüler futbol oyunu FIFA 22'yi indirin. HyperMotion teknolojisi ile gerçekçi futbol deneyimi.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "f1-2021",
+    title: "F1 2021 Full Pc İndir",
+    description: "Codemasters'ın Formula 1 yarış oyunu F1 2021'i indirin. Braking Point hikaye modu ile yeni bir deneyim.",
+    image: "",
+    downloadUrl: "#",
+    crackFixUrl: "#",
+  },
+  {
+    id: "dreadzone",
+    title: "DREADZONE Full Pc İndir",
+    description: "Aksiyon dolu hayatta kalma oyunu DREADZONE'u indirin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "portal-1",
+    title: "Portal 1 Full Pc İndir",
+    description: "Valve'ın portal tabanlı bulmaca oyunu Portal'ı indirin. GLaDOS'un testlerinden geçin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "portal-2",
+    title: "Portal 2 Full Pc İndir",
+    description: "Portal serisinin devamı Portal 2'yi indirin. Daha fazla bulmaca, daha fazla portal.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "fnaf-sister-location",
+    title: "Five Nights At Freddy's Sister Location Full Pc İndir",
+    description: "Scott Cawthon'ın korku serisi FNAF'ın Sister Location bölümünü indirin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "ben-and-ed",
+    title: "Ben And ED Full Pc İndir",
+    description: "Zombi Ed'i kontrol ederek engelleri aşın. Eğlenceli bir 3D platform oyunu.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "ben-and-ed-blood-party",
+    title: "Ben And ED Blood Party Full Pc İndir",
+    description: "Ben And ED serisinin çok oyunculu devamı Blood Party'yi indirin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "cod-1",
+    title: "Call of Duty 1 Full Pc İndir",
+    description: "Call of Duty serisinin ilk oyununu indirin. İkinci Dünya Savaşı'nda savaşın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "cod-2",
+    title: "Call of Duty 2 Full Pc İndir",
+    description: "Call of Duty serisinin ikinci oyununu indirin. İkinci Dünya Savaşı'nın farklı cephelerinde savaşın.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "vector-1",
+    title: "Vector 1 Full Pc İndir",
+    description: "Parkour temalı koşu oyunu Vector'ü indirin. Özgürlük için koşun.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "vector-2",
+    title: "Vector 2 Full Pc İndir",
+    description: "Vector serisinin devamı Vector 2'yi indirin. Daha fazla parkur, daha fazla aksiyon.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "pes-2010",
+    title: "PES 2010 Full Pc İndir",
+    description: "Konami'nin Pro Evolution Soccer 2010 futbol oyununu indirin.",
+    image: "",
+    downloadUrl: "#",
+  },
+  {
+    id: "age-of-history-3",
+    title: "Age of History 3 Full Pc İndir",
+    description: "Strateji oyunu Age of History 3'ü indirin. Dünya tarihini yeniden yazın. Şifre: 12345",
+    image: "",
+    downloadUrl: "#",
+    password: "12345",
+  },
+  // ---- Games with cover images ----
+  {
+    id: "nioh-3",
+    title: "Nioh 3 Full Pc İndir",
+    description: "Team Ninja'nın zorlu aksiyon RPG serisi Nioh'un üçüncü oyununu indirin. Japon mitolojisinde geçen epik savaşlar sizi bekliyor.",
+    image: "",
+    downloadUrl: "https://www.dosyadrive.vip/35JSt",
+  },
+  {
+    id: "black-myth-wukong",
+    title: "Black Myth Wukong Full Pc İndir",
+    description: "Game Science'ın Çin mitolojisinden ilham alan aksiyon RPG'si Black Myth: Wukong'u indirin. Maymun Kral olarak destansı bir yolculuğa çıkın.",
+    image: "",
+    downloadUrl: "https://www.dosyadrive.vip/vedgK",
+    crackFixUrl: "https://www.mediafire.com/folder/rj7xdou4npxou/Videos",
+    crackFixButtonText: "Crack Fix v2.2 AMD + INTEL",
+  },
+  {
+    id: "superhot",
+    title: "SUPERHOT Full Pc İndir",
+    description: "Zaman sadece siz hareket ettiğinizde ilerleyen yenilikçi FPS oyunu SUPERHOT'u indirin.",
+    image: "",
+    downloadUrl: "https://dosyadrive.vip/7LEQC",
+  },
+  {
+    id: "superhot-mind-control-delete",
+    title: "SUPERHOT Mind Control Delete Full Pc İndir",
+    description: "SUPERHOT serisinin genişletilmiş devamı Mind Control Delete'i indirin. Daha fazla seviye, daha fazla aksiyon.",
+    image: "",
+    downloadUrl: "https://dosyadrive.vip/MYctx",
+  },
+  {
+    id: "mirrors-edge",
+    title: "Mirror's Edge Full Pc İndir",
+    description: "DICE'ın parkur tabanlı aksiyon-macera oyunu Mirror's Edge'i indirin. Faith olarak şehrin çatılarında koşun.",
+    image: mirrorsEdgeCover,
+    downloadUrl: "https://dosyadrive.vip/33Jf7",
+  },
+  {
+    id: "mirrors-edge-catalyst",
+    title: "Mirror's Edge Catalyst Full Pc İndir",
+    description: "Mirror's Edge serisinin devamı Catalyst'i indirin. Açık dünya parkur deneyimi.",
+    image: mirrorsEdgeCatalystCover,
+    downloadUrl: "https://www.dosyadrive.vip/qGKES",
+  },
+  // ---- NEW games (will appear at top due to reverse) ----
+  {
+    id: "csgo-2013",
+    title: "CS-GO 2013 Sürümü Full Pc İndir",
+    description: "Counter-Strike: Global Offensive'in 2013 yılındaki klasik sürümünü indirin. Nostalji dolu FPS deneyimi.",
+    image: csgo2013Cover,
+    downloadUrl: "https://drive.usercontent.google.com/download?id=1AGXUUScsDMnMpx9QA76WuMMyWcWbs5or&export=download&authuser=0",
+  },
+  {
+    id: "poppy-playtime-chapter-3",
+    title: "Poppy Playtime Chapter 3 Full Pc İndir",
+    description: "MOB Games'in korku serisi Poppy Playtime'ın üçüncü bölümünü indirin. Playtime Co. fabrikasının derinliklerine inin ve CatNap ile yüzleşin.",
+    image: poppyPlaytime3Cover,
+    downloadUrl: "https://0.torrentoyunindir.com/torrents1/Poppy.Playtime.Chapter.3-GoldBerg.torrent",
+  },
+  {
+    id: "poppy-playtime-chapter-4",
+    title: "Poppy Playtime Chapter 4 Full Pc İndir",
+    description: "Poppy Playtime serisinin dördüncü bölümünü indirin. Yeni korkular ve gizemler sizi bekliyor.",
+    image: poppyPlaytime4Cover,
+    downloadUrl: "https://0.torrentoyunindir.com/torrents1/Poppy.Playtime.Chapter.4-RUNE.torrent",
+  },
+  {
+    id: "poppy-playtime-chapter-5",
+    title: "Poppy Playtime Chapter 5 Full Pc İndir",
+    description: "Poppy Playtime serisinin beşinci ve son bölümünü indirin. Tüm sırlar açığa çıkıyor.",
+    image: poppyPlaytime5Cover,
+    downloadUrl: "https://0.torrentoyunindir.com/torrents1/Poppy.Playtime.Chapter.5-RUNE.torrent",
+  },
+];
